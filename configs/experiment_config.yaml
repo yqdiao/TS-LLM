@@ -1,0 +1,58 @@
+# 实验配置文件（价格预测）
+
+data:
+  data_dir: "data/processed"
+  tickers:
+    - "1319"
+    - "1401"
+    - "1405"
+    - "1419"
+    - "1518"
+    - "1712"
+    - "1722"
+    - "1743"
+    - "1766"
+    - "1780"
+    - "1801"
+    - "1802"
+    - "1803"
+    - "1812"
+    - "1840"
+
+pipeline:
+  lookback: 60
+  horizon: 30
+
+features:
+  - "mid_price"
+  - "spread"
+  - "order_imbalance"
+  - "log_return"
+  - "vol_5"
+  - "vol_10"
+  - "vol_20"
+  - "vol_ma_5"
+  - "vol_ma_10"
+  - "vol_ma_20"
+  - "vol_spike"
+
+split:
+  train_ratio: 0.8
+
+baselines:
+  lightgbm:
+    num_leaves: 63
+    learning_rate: 0.05
+    n_estimators: 500
+  lstm:
+    hidden_dim: 64
+    num_layers: 2
+    epochs: 30
+    batch_size: 256
+    lr: 0.001
+  tcn:
+    num_channels: [32, 32]
+    kernel_size: 3
+    epochs: 30
+    batch_size: 256
+    lr: 0.001

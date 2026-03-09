@@ -84,7 +84,7 @@ pip install --upgrade pip
 | **ts-llm环境安装说明.md** | 环境路径、按顺序安装、常见报错与修正、验证命令 |
 | **Code_Citations_CN.md** | 方案提纲与代码引用 |
 
-仓库中还包含：**PatchTST**、**Informer2020**、**lag-llama**、**DeepLOB** 等子目录，**LASSO操作流程**、**PySpark 高频数据与滞后收益预测** 的 notebook 与样本数据（大体积数据目录 `merged_300_common_stocks/` 未纳入 Git，见 `.gitignore`）。
+仓库中还包含：**PatchTST**、**Informer2020**、**lag-llama**、**DeepLOB** 等子目录，**LASSO操作流程**、**PySpark 高频数据与价格预测** 的 notebook 与样本数据（大体积数据目录 `merged_300_common_stocks/` 未纳入 Git，见 `.gitignore`）。
 
 ---
 
