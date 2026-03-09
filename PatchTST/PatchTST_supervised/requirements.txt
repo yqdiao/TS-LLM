@@ -1,0 +1,6 @@
+numpy
+matplotlib
+pandas
+scikit-learn
+# torch==1.11.0 在 macOS arm64 + Python 3.11 下已无 wheel，改用 2.x
+torch>=2.0.0

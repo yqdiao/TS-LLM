@@ -1,0 +1,29 @@
+# 虚拟环境（勿提交）
+ts-llm/
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# 系统与编辑器
+.DS_Store
+*.swp
+*.swo
+*~
+
+# 临时/备份（可选：若需提交可删除下面一行）
+.~*
+
+# 数据目录过大（约 23GB），不适合放入 GitHub；可改用 Git LFS 或网盘
+merged_300_common_stocks/
